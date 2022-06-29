@@ -1,6 +1,6 @@
 {
-  "name": "k6-tests",
-  "version": "1.0.0",
+  "name": "example",
+  "private": true,
   "main": "index.js",
   "scripts": {
     "build": "webpack",
