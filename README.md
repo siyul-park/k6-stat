@@ -1,1 +1,1 @@
-# Node Boilerplate
+# K6 Stat
