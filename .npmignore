@@ -1,5 +1,5 @@
 *
 !dist/*
 !dist/**/*
-!din/*
-!din/**/*
+!bin/*
+!bin/**/*
