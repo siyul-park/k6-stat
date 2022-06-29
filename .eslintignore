@@ -4,4 +4,4 @@ dist
 *.js
 *.json
 
-k6-tests
+example
