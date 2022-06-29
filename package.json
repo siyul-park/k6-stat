@@ -1,8 +1,13 @@
 {
   "name": "k6-stat",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "",
+  "license": "ISC",
+  "author": "",
   "main": "dist/index.js",
+  "bin": {
+    "k6-stat": "./bin/k6-stat.js"
+  },
   "scripts": {
     "build": "gulp",
     "build:watch": "gulp watch",
@@ -10,13 +15,17 @@
     "compile": "tsc",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
+    "package:sort": "sort-package-json \"**/package.json\"",
     "prepublishOnly": "cross-env NODE_ENV=production npm run build",
     "test": "jest"
   },
-  "author": "",
-  "license": "ISC",
+  "dependencies": {
+    "arg": "^5.0.2"
+  },
   "devDependencies": {
     "@types/jest": "^28.1.3",
+    "@types/jsonfile": "^6.1.0",
+    "@types/k6": "^0.37.0",
     "@types/node": "^16.11.41",
     "@typescript-eslint/eslint-plugin": "^5.30.0",
     "@typescript-eslint/parser": "^5.30.0",
@@ -35,6 +44,7 @@
     "gulp-uglify": "^3.0.2",
     "husky": "^8.0.1",
     "jest": "^28.1.1",
+    "jsonfile": "^6.1.0",
     "pinst": "^3.0.0",
     "sort-package-json": "^1.57.0",
     "ts-jest": "^28.0.5",

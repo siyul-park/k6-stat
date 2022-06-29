@@ -3,5 +3,3 @@ node_modules
 dist
 *.js
 *.json
-
-k6-tests
