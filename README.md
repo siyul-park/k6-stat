@@ -1,7 +1,42 @@
 # K6 Stat
+> Compare k6 summary results and get stat.
 
+## Installing / Getting started
+### Install
 ```shell
-k6-stat.js ./sample1.json ./sample2.json
+npm i -g k6-stat
+```
+### Run Test
+```shell
+k6 run script.js
+```
+To obtain complete summary data, define a handle summary and proceed with the test
+```ts
+function handleSummary(data: Record<string, unknown>): Record<string, unknown> {
+  const result: Record<string, unknown> = {
+    'stdout': textSummary(data, { indent: ' ', enableColors: true }),
+  };
+  if (output != null) {
+    result[output] = JSON.stringify(data);
+  }
+  return result;
+}
+```
+```ts
+import http from 'k6/http';
+import { sleep } from 'k6';
+
+export { default as handleSummary } from './handle-summary';
+
+export default function () {
+  http.get('https://test.k6.io');
+  sleep(1);
+}
+```
+
+### Compare
+```shell
+k6-stat ./my_test_result1.json ./my_test_result2.json
 ```
 ```shell
 data_received..................: 0 B   -226.2006666481302 B/s

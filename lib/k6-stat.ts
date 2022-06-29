@@ -7,11 +7,11 @@ import diff from './diff';
 import Summary from './summary';
 
 const args = arg({
-  '--output': String,
+  '--out': String,
 });
 
 const files = args._;
-const output = args['--output'];
+const output = args['--out'];
 
 (async () => {
   const x = await util.promisify(jsonfile.readFile)(files[0]) as Summary;

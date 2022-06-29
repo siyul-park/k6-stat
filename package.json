@@ -1,9 +1,9 @@
 {
   "name": "k6-stat",
-  "version": "1.0.1",
-  "description": "",
-  "license": "ISC",
-  "author": "",
+  "version": "1.0.2",
+  "description": "Compare k6 summary results and get stat.",
+  "homepage": "https://github.com/siyual-park/cheeket.js",
+  "license": "MIT",
   "main": "dist/index.js",
   "bin": {
     "k6-stat": "./bin/k6-stat.js"
