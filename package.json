@@ -1,6 +1,6 @@
 {
   "name": "k6-stat",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Compare k6 summary results and get stat.",
   "homepage": "https://github.com/siyual-park/k6-stat",
   "license": "MIT",

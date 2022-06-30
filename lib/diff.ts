@@ -22,7 +22,7 @@ function diff(x: Summary, y: Summary): Summary {
 
     const values: Record<string, number> = {};
     arrayUnion(Object.keys(xValues), Object.keys(yValues)).forEach((valueKey) => {
-      values[valueKey] = (xValues[valueKey] ?? 0) - (yValues[valueKey] ?? 0);
+      values[valueKey] = (yValues[valueKey] ?? 0) - (xValues[valueKey] ?? 0);
     });
     metrics[metricKey] = { 
       values,
