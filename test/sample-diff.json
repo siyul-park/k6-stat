@@ -2,7 +2,7 @@
   "state": {
     "isStdOutTTY": true,
     "isStdErrTTY": true,
-    "testRunDurationMs": 34.781999999999925
+    "testRunDurationMs": -34.781999999999925
   },
   "options": {
     "noColor": false,
