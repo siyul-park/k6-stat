@@ -5,7 +5,7 @@ import Metric from './metric';
 
 type Summary = {
   options: Options;
-  state: State,
+  state: State;
   root_group: Group;
   metrics: Record<string, Metric>;
 };

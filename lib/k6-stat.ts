@@ -14,13 +14,18 @@ const files = args._;
 const output = args['--out'];
 
 (async () => {
-  const x = await util.promisify(jsonfile.readFile)(files[0]) as Summary;
-  const y = await util.promisify(jsonfile.readFile)(files[1]) as Summary;
+  const x = (await util.promisify(jsonfile.readFile)(files[0])) as Summary;
+  const y = (await util.promisify(jsonfile.readFile)(files[1])) as Summary;
 
   const difference = diff(x, y);
 
   if (output != null) {
-    await (util.promisify(jsonfile.writeFile) as (file: Path, obj: unknown) => Promise<void>)(output, difference);
+    await (
+      util.promisify(jsonfile.writeFile) as (
+        file: Path,
+        obj: unknown,
+      ) => Promise<void>
+    )(output, difference);
   }
 
   console.log(textSummary(difference));

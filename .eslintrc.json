@@ -5,6 +5,7 @@
     "jest": true
   },
   "extends": [
+    "plugin:prettier/recommended",
     "airbnb-typescript/base",
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
@@ -23,6 +24,7 @@
     "import"
   ],
   "rules": {
+    "prettier/prettier": ["error", { "singleQuote": true }],
     "max-len": ["error", { "code": 120 }],
     "no-console": "off"
   }
