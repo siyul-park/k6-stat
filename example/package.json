@@ -10,7 +10,7 @@
     "package-json:sort": "sort-package-json \"package.json\""
   },
   "dependencies": {
-    "json-diff": "^0.9.1"
+    "json-diff": "^0.10.0"
   },
   "devDependencies": {
     "@babel/core": "7.20.2",
