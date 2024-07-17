@@ -37,7 +37,7 @@
     "eslint-config-prettier": "^8.10.0",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-monorepo": "^0.3.2",
-    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-prettier": "^5.2.1",
     "glob": "^8.1.0",
     "gulp": "^4.0.2",
     "gulp-changed": "^4.0.3",
