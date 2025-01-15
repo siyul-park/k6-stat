@@ -18,7 +18,7 @@
     "@babel/plugin-proposal-object-rest-spread": "7.20.7",
     "@babel/preset-env": "7.26.0",
     "@babel/preset-typescript": "7.26.0",
-    "@types/k6": "~0.42.0",
+    "@types/k6": "~0.54.2",
     "@types/webpack": "5.28.5",
     "@typescript-eslint/eslint-plugin": "^5.62.0",
     "@typescript-eslint/parser": "^5.62.0",
